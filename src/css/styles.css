@@ -62,3 +62,8 @@ main {
     border: none;
     cursor: pointer;
 }
+
+.meme--image {
+    width: 100%;
+    padding-top: 60px;
+}
