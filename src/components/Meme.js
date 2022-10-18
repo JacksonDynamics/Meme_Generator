@@ -7,8 +7,8 @@ function Meme() {
 
     function handleClick() {
         const memesArr = memesData.data.memes
-        const item = Math.floor(Math.random()*memesArr.length)
-        const url = memesArr[item].url
+        const randomMeme = Math.floor(Math.random()*memesArr.length)
+        const url = memesArr[randomMeme].url
         setMemeImage(url)
       }
 
