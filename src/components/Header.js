@@ -1,7 +1,7 @@
 
 function Header() {
     return(
-        <header class="header">
+        <header className="header">
             <img className="header--image" 
                  src="./images/troll-face.png" 
                  alt="Meme troll-face" />
