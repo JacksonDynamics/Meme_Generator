@@ -1,8 +1,6 @@
 import memesData from "../memesData.js"
 import {useState} from "react"
 
-
-
 function Meme() {
     const [meme,setMeme] = useState({
         topText:"",
