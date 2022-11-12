@@ -7,8 +7,10 @@ function Meme() {
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
+
     const [allMemeImages, setAllMemeImages] = useState(memesData)
 
+    
     function handleClick() {
         const memesArr = allMemeImages.data.memes
         const randomMeme = Math.floor(Math.random()*memesArr.length)
