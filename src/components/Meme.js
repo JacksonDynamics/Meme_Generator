@@ -1,4 +1,4 @@
-import memesData from "../memesData.js"
+import MemesData from "../memesData.js"
 import {useState} from "react"
 
 function Meme() {
@@ -8,7 +8,7 @@ function Meme() {
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
 
-    const [allMemeImages, setAllMemeImages] = useState(memesData)
+    const [allMemeImages, setAllMemeImages] = useState(MemesData)
 
     
     function handleClick() {
