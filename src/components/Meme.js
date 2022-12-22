@@ -23,7 +23,6 @@ function Meme() {
         }))
       }
 
-      
     return(
         <main>
             <div className="form">
