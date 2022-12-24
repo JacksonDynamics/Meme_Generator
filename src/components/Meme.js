@@ -10,7 +10,6 @@ function Meme() {
 
     const [allMemeImages] = useState(MemesData)
 
-    
     function handleClick() {
         const memesArr = allMemeImages.data.memes
         const randomMeme = Math.floor(Math.random()*memesArr.length)
