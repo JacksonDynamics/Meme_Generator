@@ -2,13 +2,11 @@ import MemesData from "../memesData.js"
 import {useState} from "react"
 
 function Meme() {
-    const firstMeme = {
+    const [meme, setMeme] = useState({
         topText:"",
         bottomText: "",
         randomImage: ""
-    }
-
-    const [meme,setMeme] = useState(firstMeme)
+    })
 
     const [allMemeImages] = useState(MemesData)
 
