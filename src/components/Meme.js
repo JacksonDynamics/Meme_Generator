@@ -38,7 +38,8 @@ function Meme() {
                 </button>
             </div>
             <img className="meme--image" 
-                 src={meme.randomImage} alt="" 
+                 src={meme.randomImage} 
+                 alt="" 
             />
         </main>
     )
