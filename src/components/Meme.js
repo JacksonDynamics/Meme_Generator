@@ -5,7 +5,7 @@ function Meme() {
     const firstMeme = {
         topText:"",
         bottomText: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg"
+        randomImage: ""
     }
 
     const [meme,setMeme] = useState(firstMeme)
