@@ -10,7 +10,7 @@ function Meme() {
 
     const [meme,setMeme] = useState(firstMeme)
 
-    const [allMemeImages, setAllMemeImages] = useState(MemesData)
+    const [allMemeImages] = useState(MemesData)
 
     
     function handleClick() {
