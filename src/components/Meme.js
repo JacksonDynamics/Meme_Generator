@@ -8,7 +8,7 @@ function Meme() {
         randomImage: ""
     })
 
-    const [allMemeImages] = useState(MemesData)
+    const [allMemeImages, setAllMemeImages] = useState(MemesData)
 
     function handleClick() {
         const memesArr = allMemeImages.data.memes
