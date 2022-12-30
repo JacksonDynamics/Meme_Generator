@@ -20,16 +20,32 @@ function Meme() {
         }))
       }
 
+      function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevFormData => ({
+            ...prevFormData,
+            [name]: value
+        }))
+    }
+
     return(
         <main>
             <div className="form">
-                <input type="text"
-                       className="form--input"
-                       placeholder="Top Text" 
+                <input 
+                    type="text"
+                    className="form--input"
+                    placeholder="Top Text" 
+                    name="topText"
+                    onChange={handleChange}
+                    value={meme.topText}
                 />
-                <input type="text"
-                       className="form--input"
-                       placeholder="Bottom Text" 
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    onChange={handleChange}
+                    value={meme.bottomText}
                 />
                 <button onClick={handleClick} 
                         className="form--button">
@@ -41,8 +57,8 @@ function Meme() {
                      className="meme--image" 
                      alt="" 
                 />
-                <h2 className="meme--text top">One does not simply</h2>
-                <h2 className="meme--text bottom">Walk into Mordor</h2>
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
         </main>
     )
