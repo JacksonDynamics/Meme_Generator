@@ -63,6 +63,9 @@ main {
     cursor: pointer;
 }
 
+.meme {
+    position: relative;
+}
 .meme--image {
     width: 100%;
     padding-top: 60px;
@@ -74,10 +77,10 @@ main {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    margin: 15px 0;
+    margin: 100px 0 50px;
     padding: 0 5px;
     font-family: impact, sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -94,10 +97,10 @@ main {
 }
 
 .bottom {
-    padding-bottom: 0;
+    bottom: 0;
 }
 
 .top {
-    top: 0px;
+    top: 0;
 }
 /* ------------------------------- */
