@@ -13,7 +13,7 @@ function Meme() {
         fetch("https://api.imgflip.com/get_memes")
         .then(res => res.json())
         .then(data => setAllMemes(data))
-    }, [meme])
+    }, [])
 
     function handleClick() {
         const memesArr = allMemes.data.memes
