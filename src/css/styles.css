@@ -67,7 +67,7 @@ main {
     position: relative;
 }
 .meme--image {
-    max-width: 100%;
+    width: 100%;
     border-radius: 3px;
     padding-top: 60px;
 }
